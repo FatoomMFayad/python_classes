@@ -1,21 +1,24 @@
 class Rectangle:
-    width = 0
-    length = 0
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-    def perimeter(self):
-       return (self.length + self.width) * 2
+    def Perimeter(self):
+        return 2 * (self.length + self.width)
 
-    def area(self):
-        return (self.length * self.width)
+    def Area(self):
+        return self.length * self.width
 
     def display(self):
-        return print(f"Rectangle:\nwidth = {self.width},\nlength = {self.length}, \nperimeter = {self.perimeter()},\narea = {self.area()}")
+        print(f"Length: {self.length}")
+        print(f"Width: {self.width}")
+        print(f"Perimeter: {self.Perimeter()}")
+        print(f"Area: {self.Area()}")
 
 
-r1 = Rectangle()
-r1.width = 10
-r1.length = 20
-r1.perimeter()
-r1.area()
+r1 = Rectangle(10, 20)
+
+r1.Perimeter()
+r1.Perimeter()
 r1.display()
 
