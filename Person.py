@@ -5,4 +5,4 @@ class Person:
         self.name = name
         self.age = age
     def display(self):
-        return print(f"Person name is {self.name} `and age is {self.age}`")
+        print(f"Person name is {self.name} `and age is {self.age}`")
