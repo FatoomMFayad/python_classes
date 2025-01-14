@@ -15,3 +15,17 @@ class BankAccount:
     def withdraw(self, amount):
         self.balance -= amount
         return self.balance
+
+    def bankFees(self):
+        bank_fees = self.balance * 0.05
+        return bank_fees
+
+    def display(self):
+        print(f"Account Number: {self.accountNumber}, Name: {self.name}, Balance: {self.balance}, bank fees: {self.bankFees()}")
+
+bank_account = BankAccount(1234, "Fatoom", 100)
+bank_account.display()
+bank_account.deposit(100)
+bank_account.display()
+bank_account.withdraw(10)
+bank_account.display()
