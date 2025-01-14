@@ -5,6 +5,9 @@ class Country:
     outcome = 0
     income = 0
 
+    def cal_revenue(self):
+        return self.outcome - self.income
+
 c1 = Country()
 c1.name = 'Palestine'
 c1.capital = 'Jerusalem'
@@ -21,6 +24,6 @@ c2.income = 10000
 
 countries = [c1, c2]
 for country in countries:
-    print(country.name)
+    print(country.cal_revenue())
 
 
