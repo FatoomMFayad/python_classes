@@ -5,9 +5,12 @@ class Student(Person):
     section=""
 
     def __init__(self, name, age, section):
-        super.__init__(name, age)
+        super().__init__(name, age)
         self.section = section
 
     def displayStudent(self):
         super().display()
-        print(f"Student Section {self.section}")
+        print(f",and my Section is {self.section}")
+
+student = Student("John", "18", "CSE")
+student.displayStudent()
